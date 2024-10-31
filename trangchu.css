@@ -1,1 +1,99 @@
 
+/* Basic Reset */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variables */
+:root {
+    --color-primary: #4f46e5;
+    --color-secondary: #22c55e;
+    --color-dark: #1e293b;
+    --color-light: #f8fafc;
+    --font-sans: 'Helvetica', sans-serif;
+}
+
+/* Global Styles */
+body {
+    font-family: var(--font-sans);
+    color: var(--color-dark);
+    line-height: 1.6;
+}
+
+/* Containers */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+.header {
+    background-color: var(--color-dark);
+    color: white;
+    padding: 1rem 0;
+}
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav__link, .btn {
+    margin-left: 1rem;
+    color: white;
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    padding: 4rem 0;
+    background-color: var(--color-light);
+}
+.hero__title {
+    font-size: 2.5rem;
+    color: var(--color-primary);
+}
+.hero__buttons .btn--primary {
+    background-color: var(--color-primary);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+/* Features Section */
+.features {
+    padding: 2rem 0;
+}
+.section__title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+.features__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+.feature__icon {
+    width: 50px;
+    height: 50px;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--color-dark);
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+.footer__link {
+    color: white;
+    margin-left: 1rem;
+    text-decoration: none;
+}
