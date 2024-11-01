@@ -1,15 +1,68 @@
 body{
     padding:0;
     margin:0;
-    font-family: Georgia, 'Times New Roman', Times, serif;
     line-height: inherit;
+}
+html{
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 :root{
     --tw-bg-opacity: 0.8;
 }
 .container{
-    background: linear-gradient(125deg, #000000, #1a6a6a)
+    background:black;
+    width: 1520px;
+    height: 1200px;
+
 }
-.logo a{
-    color: rgb(164, 16, 16);
+.Main-Menu{
+    overflow: hidden;
+    width: 100%;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+}
+/* Đổi màu logo sang màu trắng */
+.logo {
+        filter: brightness(0) invert(1);
+        margin:30px;
+        display:flex;
+}
+.logo a img:hover{
+    opacity:70%;
+}
+.logo ul{
+    text-align:center;
+    list-style: none;
+    margin:0px;
+    padding:10px;
+}
+.logo ul li{
+    display:inline-block;
+}
+.logo ul li a{
+    text-decoration:none;
+    padding:10px 15px;
+    color:#ffffff;
+}
+.logo ul li a:hover{
+    opacity:70%;
+}
+.request-code{
+    background-color: #3D9F8D;
+    border-radius: 10px;
+    width: 170px;
+    height: 50px;
+    text-align: center;
+    color:white;
+    margin:30px; 
+    text-decoration: none;
+    line-height: 0.5;
+    font-size:20px;
+}
+.request-code:hover
+{
+    background-color: #2aeeca;
 }
