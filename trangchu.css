@@ -28,10 +28,13 @@ html{
 .logo {
         filter: brightness(0) invert(1);
         margin:30px;
+        margin-left:235px;
+        margin-top:40px;
         display:flex;
 }
 .logo a img:hover{
     opacity:70%;
+    padding:40px;
 }
 .logo ul{
     text-align:center;
@@ -44,7 +47,7 @@ html{
 }
 .logo ul li a{
     text-decoration:none;
-    padding:10px 15px;
+    padding: 40px ;
     color:#ffffff;
 }
 .logo ul li a:hover{
@@ -61,6 +64,8 @@ html{
     text-decoration: none;
     line-height: 0.5;
     font-size:20px;
+    margin-right:82px;
+    margin-top:42px;
 }
 .request-code:hover
 {
